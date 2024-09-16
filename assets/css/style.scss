@@ -1,0 +1,70 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body {
+  background: #393939;
+  color: antiquewhite;
+}
+
+header {
+  width: inherit;
+}
+
+a {
+  color: #5dcffe;
+}
+
+nav ul a {
+  color: antiquewhite;
+}
+
+nav ul li.tag-h1 a {
+  color: navajowhite;
+}
+
+strong {
+  color: #b7860b;
+}
+
+section {
+  color: blanchedalmond;
+  background: black;
+
+  box-shadow: 0px 3px 20px black;
+  border: 1px solid #3d3d3d;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: darkgoldenrod;
+    margin: 0 0 10px;
+  }
+}
+
+@media print, screen and (max-width: 1060px) {
+  header {
+    position: relative;
+    min-height: 48px;
+    padding: 5px 0px;
+    h1 {
+      font-size: 24px;
+    }
+    p {
+      display: none;
+    }
+  }
+
+  section {
+    margin-top: 0px;
+    padding: 10px;
+    border: none;
+  }
+  #banner {
+    display: none;
+  }
+}
